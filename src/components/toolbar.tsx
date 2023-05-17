@@ -19,7 +19,7 @@ const ROUTES = [
 
 export function Toolbar() {
   return (
-    <div className="px-10 py-5 shadow-lg">
+    <div className="fixed w-full px-10 py-5 shadow-lg bg-background">
       <div className="container flex justify-between">
         <div className="flex items-center gap-3">
           <div className="relative w-14 h-14">
@@ -31,7 +31,7 @@ export function Toolbar() {
               className="rounded-full"
             />
           </div>
-          <h2 className="text-lg font-bold uppercase">Aimee Avila</h2>
+          <h3 className="text-lg font-bold uppercase">Aimee Avila</h3>
         </div>
         <div className="flex items-center gap-3">
           {ROUTES.map((route) => (
