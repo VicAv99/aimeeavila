@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Aimee Avila",
+  title: "Aimee Avila | Project Manager",
   description:
     "Experienced project manager sharing insights and strategies for success. Join me on this journey to turn project visions into reality.",
 };
