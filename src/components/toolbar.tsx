@@ -31,13 +31,15 @@ export function Toolbar() {
               className="rounded-full"
             />
           </div>
-          <h3 className="text-lg font-bold uppercase">Aimee Avila</h3>
+          <h3 className="text-lg font-bold uppercase whitespace-nowrap">
+            Aimee Avila
+          </h3>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-end w-full gap-3">
           {ROUTES.map((route) => (
             <Button key={route.title} variant="link">
               <Link href={route.href}>
-                <span className="text-lg font-bold uppercase text-slate-700 hover:text-teal-600">
+                <span className="font-bold uppercase text-slate-700 hover:text-teal-600">
                   {route.title}
                 </span>
               </Link>

@@ -1,7 +1,7 @@
 export function HomeSection() {
   return (
     <div className="flex items-center justify-center h-screen bg-purple-50">
-      <div className="max-w-5xl text-center bg-white rounded-lg shadow-md space-y-9 p-11">
+      <div className="max-w-md text-center bg-white rounded-lg shadow-md md:max-w-3xl lg:max-w-5xl space-y-9 p-11">
         <h2 className="text-6xl font-bold uppercase">
           Hey there! I&apos;m Aimee Avila!
         </h2>

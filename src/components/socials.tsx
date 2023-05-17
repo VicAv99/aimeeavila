@@ -7,7 +7,7 @@ import { Icon } from "./ui/icon";
 export function Socials() {
   return (
     <div className="fixed bottom-0 w-full">
-      <div className="bottom-0 float-right my-8 mr-8">
+      <div className="bottom-0 float-right mb-5 mr-8">
         <Button variant="outline" className="mr-1.5 bg-white">
           <Link target="_blank" href="https://www.instagram.com/aimee_avila/">
             <Icon name="Instagram" />
