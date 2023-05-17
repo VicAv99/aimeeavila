@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Button } from "~/components/button";
 import { Icon } from "~/components/icon";
 
 export default function Page() {
@@ -30,20 +32,38 @@ export default function Page() {
             Cooking up the best content!
           </h1>
           <p className="mx-10 text-xl tracking-wide lg:text-2xl lg:max-w-xl lg:mx-auto">
-            Site is under construction. Check back for an update soon
+            Site is under construction. <br /> Check back for an update soon
           </p>
         </div>
       </div>
       <div className="absolute bottom-5">
         <ul className="flex space-x-3">
           <li>
-            <Icon name="Instagram" />
+            <Button variant="secondary">
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/aimee_avila/"
+              >
+                <Icon name="Instagram" />
+              </Link>
+            </Button>
           </li>
           <li>
-            <Icon name="Twitter" />
+            <Button variant="secondary">
+              <Link target="_blank" href="https://twitter.com/aimee_avila23">
+                <Icon name="Twitter" />
+              </Link>
+            </Button>
           </li>
           <li>
-            <Icon name="Facebook" />
+            <Button variant="secondary">
+              <Link
+                target="_blank"
+                href="https://www.facebook.com/aimee.avila.73"
+              >
+                <Icon name="Facebook" />
+              </Link>
+            </Button>
           </li>
         </ul>
       </div>
