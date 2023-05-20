@@ -1,5 +1,5 @@
-import { HomeSection } from "~/components/home-section";
 import { Socials } from "~/components/socials";
+import { HomeSection } from "~/components/templates";
 import { Toolbar } from "~/components/toolbar";
 
 export default function Home() {
