@@ -19,7 +19,7 @@ const ROUTES = [
 
 export function Toolbar() {
   return (
-    <div className="fixed w-full px-10 py-5 shadow-lg bg-background">
+    <div className="fixed w-full px-10 py-3 shadow-md md:shadow-lg md:py-5 bg-background">
       <div className="container flex justify-between">
         <div className="flex items-center gap-3">
           <div className="relative w-14 h-14">
@@ -31,13 +31,18 @@ export function Toolbar() {
               className="rounded-full"
             />
           </div>
-          <h3 className="text-lg font-bold uppercase whitespace-nowrap">
+          <h3 className="hidden text-lg font-bold uppercase whitespace-nowrap md:block">
             Aimee Avila
           </h3>
         </div>
-        <div className="flex items-center justify-end w-full gap-3">
+        <div className="flex items-center justify-end w-full gap-0.5">
           {ROUTES.map((route) => (
-            <Button key={route.title} variant="link">
+            <Button
+              key={route.title}
+              variant="link"
+              size="sm"
+              className="px-1 md:px-2"
+            >
               <Link href={route.href}>
                 <span className="font-bold uppercase text-slate-700 hover:text-teal-600">
                   {route.title}
