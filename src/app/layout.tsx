@@ -1,9 +1,9 @@
 import "./globals.css";
 
-import { Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
 
-const inter = Nunito({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Aimee Avila | Project Manager",
