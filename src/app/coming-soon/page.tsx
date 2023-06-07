@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { Button } from "~/components/ui/button";
-import { Icon } from "~/components/ui/icon";
+import { Socials } from "~/components/socials";
 
 export default function Page() {
   return (
@@ -36,37 +34,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-5">
-        <ul className="flex space-x-3">
-          <li>
-            <Button variant="secondary">
-              <Link
-                target="_blank"
-                href="https://www.instagram.com/aimee_avila/"
-              >
-                <Icon name="Instagram" />
-              </Link>
-            </Button>
-          </li>
-          <li>
-            <Button variant="secondary">
-              <Link target="_blank" href="https://twitter.com/aimee_avila23">
-                <Icon name="Twitter" />
-              </Link>
-            </Button>
-          </li>
-          <li>
-            <Button variant="secondary">
-              <Link
-                target="_blank"
-                href="https://www.facebook.com/aimee.avila.73"
-              >
-                <Icon name="Facebook" />
-              </Link>
-            </Button>
-          </li>
-        </ul>
-      </div>
+      <Socials />
     </>
   );
 }
