@@ -72,7 +72,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <Toolbar />
         <main className="mb-auto">{children}</main>
-        <footer>
+        <footer className="my-3">
           <Socials />
         </footer>
       </body>

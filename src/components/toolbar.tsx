@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -39,14 +39,10 @@ export function Toolbar() {
     <header className="w-full py-1 shadow-md px-7 md:shadow-lg bg-primary">
       <div className="container flex justify-between">
         <div className="flex items-center">
-          <div className="relative w-12 h-16">
-            <Image
-              fill
-              src="/images/logo-4.png"
-              alt=""
-              style={{ objectFit: "fill" }}
-            />
-          </div>
+          <Avatar>
+            <AvatarImage src="/images/logo-4.png" alt="@aimee_avila23" />
+            <AvatarFallback className="bg-primary">AA</AvatarFallback>
+          </Avatar>
           <h3 className="text-lg whitespace-nowrap">Aimee</h3>
         </div>
         <div className="flex items-center justify-end w-full gap-0.5">
@@ -63,7 +59,7 @@ function NavMenu() {
     <div className="hidden md:block">
       {ROUTES.map((route) => (
         <Button
-          key={route.title}
+          key={`Menu-${route.title}`}
           variant="link"
           size="sm"
           className="px-1 md:px-2"
@@ -91,7 +87,7 @@ function MobileDropdown() {
         <DropdownMenuContent className="bg-[#ac8764]">
           {ROUTES.map((route) => (
             <>
-              <DropdownMenuItem key={`Dropdown-${route.href}`} asChild>
+              <DropdownMenuItem key={`Dropdown-${route.title}`} asChild>
                 <Link href="#" className="font-bold text-white uppercase">
                   {route.title}
                 </Link>
