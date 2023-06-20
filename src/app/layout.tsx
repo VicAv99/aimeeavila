@@ -2,6 +2,9 @@ import "./globals.css";
 
 import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
+import { Socials } from "~/components/socials";
+import { Toolbar } from "~/components/toolbar";
+import { cn } from "~/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,18 @@ type RootLayoutProps = PropsWithChildren<unknown>;
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "flex flex-col h-screen justify-between"
+        )}
+      >
+        <Toolbar />
+        <main className="mb-auto">{children}</main>
+        <footer>
+          <Socials />
+        </footer>
+      </body>
     </html>
   );
 }
