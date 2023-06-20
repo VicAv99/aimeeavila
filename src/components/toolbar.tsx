@@ -13,11 +13,11 @@ import { Icon } from "./ui/icon";
 
 const ROUTES = [
   {
-    href: "#",
+    href: "/",
     title: "home",
   },
   {
-    href: "#",
+    href: "#about",
     title: "about",
   },
   {
@@ -64,7 +64,7 @@ function NavMenu() {
           size="sm"
           className="px-1 md:px-2"
         >
-          <Link href={route.href}>
+          <Link href={route.href} scroll={false}>
             <span className="text-base font-light text-black lowercase hover:underline">
               {route.title}
             </span>

@@ -2,7 +2,10 @@ import { Badge } from "~/components/ui/badge";
 
 export function AboutMeSection() {
   return (
-    <div className="flex flex-col justify-center text-center space-y-14 md:flex-row md:space-x-14">
+    <div
+      id="about"
+      className="flex flex-col text-center space-y-14 md:flex-row md:space-x-14"
+    >
       <div className="w-full md:basis-1/2">
         <h4 className="text-xl uppercase">About me</h4>
         <div className="my-7" />
