@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
 import { Socials } from "~/components/socials";
 import { Toolbar } from "~/components/toolbar";
-import { cn } from "~/lib/utils";
+import { cn } from "~/lib/utils/cn";
 
 const inter = Inter({ subsets: ["latin"] });
 
