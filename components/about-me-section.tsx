@@ -1,10 +1,8 @@
 export function AboutMeSection() {
   return (
-    <section className="space-y-2 mx-auto text-center">
-      <h1 className="mb-8 basis-1/2 text-4xl font-bold lg:text-5xl lg:leading-tight">
-        About me
-      </h1>
-      <span className="leading-relaxed text-zinc-400">
+    <section className="space-y-6 mx-auto text-center">
+      <h2 className="uppercase lg:leading-tight">About me</h2>
+      <div className="leading-relaxed text-zinc-400">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
         temporibus officia necessitatibus tenetur veniam dignissimos repellendus
         aperiam? Labore facilis amet, illum deleniti officiis voluptate esse
@@ -22,7 +20,7 @@ export function AboutMeSection() {
         natus, quia consectetur vitae incidunt harum alias libero excepturi,
         doloremque iste aut non soluta dolorum molestias architecto qui beatae.
         Odit, consequuntur maiores. Excepturi
-      </span>
+      </div>
     </section>
   );
 }
