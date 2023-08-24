@@ -38,7 +38,7 @@ export function Navbar() {
           <h3>Aimee</h3>
         </Link>
 
-        <div className="hidden md:flex md:items-center gap-x-8 uppercase">
+        <div className="hidden md:flex md:items-center gap-x-8 lowercase">
           {LINKS.map((link) => (
             <Link
               key={`desktop-${link.href}`}
