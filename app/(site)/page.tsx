@@ -7,6 +7,8 @@ import { Profile } from "~/lib/models/profile";
 import { client } from "~/sanity/lib/client";
 import { profileQuery } from "~/sanity/lib/queries";
 
+export const revalidate = 900;
+
 export default async function Home() {
   const profile = await client.fetch<Profile>(profileQuery);
 
