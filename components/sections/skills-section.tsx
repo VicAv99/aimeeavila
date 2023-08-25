@@ -1,13 +1,8 @@
-const SKILLS = [
-  "skill 1",
-  "skill 2",
-  "skill 3",
-  "really long skilling skill 1",
-  "skill 4",
-  "skill 5",
-];
+interface SkillsSectionProps {
+  skills: string[];
+}
 
-export function SkillsSection() {
+export function SkillsSection({ skills }: SkillsSectionProps) {
   return (
     <section className="space-y-6 text-center mx-auto">
       <h2 className="uppercase lg:leading-tight">My Skills</h2>
@@ -17,7 +12,7 @@ export function SkillsSection() {
       </p>
 
       <ul className="flex flex-wrap items-center justify-center gap-3">
-        {SKILLS.map((skill, id) => (
+        {skills?.map((skill, id) => (
           <li
             key={id}
             className="rounded-md border border-transparent bg-muted px-2 py-1 hover:border-zinc-700"

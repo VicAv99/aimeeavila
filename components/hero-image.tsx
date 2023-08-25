@@ -1,48 +1,58 @@
 import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { cn } from "~/lib/cn";
+import { SanityImage } from "~/lib/models/profile";
 
 import { ImageWithFallback } from "./ui/image-with-fallback";
 
-const IMAGES = [
-  {
-    ratio: 14 / 5,
-    src: "/images/main.jpg",
-    class: "col-span-2",
-    alt: "Aimee posing for picture with back towards camera",
-  },
-  {
-    ratio: 3 / 2,
-    src: "/images/close-up.jpg",
-    alt: "Aimee close up picture of face",
-  },
-  {
-    ratio: 3 / 2,
-    src: "/images/standing.jpg",
-    alt: "Aimee posing for picture",
-  },
-];
-
 interface HeroImageProps {
   className?: string;
+  primaryImage: SanityImage;
+  leftImage: SanityImage;
+  rightImage: SanityImage;
 }
 
-export function HeroImage({ className }: HeroImageProps) {
+export function HeroImage({
+  className,
+  primaryImage,
+  leftImage,
+  rightImage,
+}: HeroImageProps) {
   return (
     <div className={cn(className)}>
       <div className="grid grid-rows-2 grid-flow-col gap-4">
-        {IMAGES.map((image) => (
-          <div key={image.src} className={cn(image.class)}>
-            <AspectRatio ratio={image.ratio}>
-              <ImageWithFallback
-                fill
-                priority
-                src={image.src}
-                alt={image.alt}
-                className="rounded-md object-cover"
-              />
-            </AspectRatio>
-          </div>
-        ))}
+        <div className="col-span-2">
+          <AspectRatio ratio={14 / 5}>
+            <ImageWithFallback
+              fill
+              priority
+              src={primaryImage.image}
+              alt={primaryImage.alt ?? ""}
+              className="rounded-md object-cover"
+            />
+          </AspectRatio>
+        </div>
+        <div className="col-span-1">
+          <AspectRatio ratio={3 / 2}>
+            <ImageWithFallback
+              fill
+              priority
+              src={leftImage.image}
+              alt={leftImage.alt ?? ""}
+              className="rounded-md object-cover"
+            />
+          </AspectRatio>
+        </div>
+        <div className="col-span-1">
+          <AspectRatio ratio={3 / 2}>
+            <ImageWithFallback
+              fill
+              priority
+              src={rightImage.image}
+              alt={rightImage.alt ?? ""}
+              className="rounded-md object-cover"
+            />
+          </AspectRatio>
+        </div>
       </div>
     </div>
   );
