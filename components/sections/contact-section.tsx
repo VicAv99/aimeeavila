@@ -14,8 +14,8 @@ import {
   FormMessage,
 } from "~/components/ui/form";
 import { Input } from "~/components/ui/input";
-
-import { Textarea } from "../ui/textarea";
+import { Textarea } from "~/components/ui/textarea";
+import { useHasMounted } from "~/lib/hooks/use-has-mounted";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -31,6 +31,7 @@ const formSchema = z.object({
 });
 
 export function ContactSection() {
+  const mounted = useHasMounted();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
@@ -40,6 +41,8 @@ export function ContactSection() {
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
+
+  if (!mounted) return null;
 
   return (
     <section className="space-y-6 mx-auto text-center">

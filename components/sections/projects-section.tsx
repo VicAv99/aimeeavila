@@ -37,7 +37,7 @@ export function ProjectsSection() {
                 <ImageWithFallback
                   fill
                   priority
-                  src={""}
+                  src={"/images/square.jpg"}
                   alt={`empty-fallback-image-${i}`}
                   className="rounded-md object-cover"
                 />
