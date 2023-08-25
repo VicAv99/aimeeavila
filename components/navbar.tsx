@@ -13,7 +13,7 @@ import {
 
 const LINKS = [
   {
-    href: "#about",
+    href: "/#about",
     label: "About",
   },
   {
@@ -25,7 +25,7 @@ const LINKS = [
     label: "Blog",
   },
   {
-    href: "#contact",
+    href: "/#contact",
     label: "Contact",
   },
 ];
