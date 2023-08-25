@@ -17,7 +17,7 @@ const LINKS = [
     label: "About",
   },
   {
-    href: "#projects",
+    href: "/projects",
     label: "Projects",
   },
   {
