@@ -15,3 +15,5 @@ export const profileQuery = groq`*[_type == "profile"][0]{
   socialLinks,
   skills
 }`;
+
+export const socialLinksQuery = groq`*[_type == "profile"][0].socialLinks`;

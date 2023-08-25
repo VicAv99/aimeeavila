@@ -1,16 +1,15 @@
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
+import { StringObject } from "~/lib/models/profile";
+import { client } from "~/sanity/lib/client";
+import { socialLinksQuery } from "~/sanity/lib/queries";
 
 import { Button } from "./ui/button";
 
 import type { LucideIcon } from "lucide-react";
 
-export function Footer() {
-  const socialLinks = {
-    twitter: "https://twitter.com/aimee_avila23",
-    linkedin: "https://www.linkedin.com/in/aimee-avila/",
-    github: "https://github.com/aimeeavila",
-  };
+export async function Footer() {
+  const socialLinks = await client.fetch<StringObject[]>(socialLinksQuery);
 
   const socialIcons: { [key: string]: LucideIcon } = {
     twitter: TwitterIcon,

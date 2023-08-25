@@ -9,11 +9,15 @@ export interface Profile {
   rightImage: SanityImage;
   shortBio: string;
   skills: string[];
-  socialLinks: string[];
+  socialLinks: StringObject[];
   title: string;
 }
 
 export interface SanityImage {
   alt?: string;
   image: string;
+}
+
+export interface StringObject {
+  [key: string]: string;
 }
