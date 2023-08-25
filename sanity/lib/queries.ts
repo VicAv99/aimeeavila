@@ -8,9 +8,6 @@ export const profileQuery = groq`*[_type == "profile"][0]{
   leftImage {alt, "image": asset->url},
   rightImage {alt, "image": asset->url},
   shortBio,
-  email,
-  location,
-  fullBio,
   "resumeUrl": resumeUrl.asset->url,
   socialLinks,
   skills

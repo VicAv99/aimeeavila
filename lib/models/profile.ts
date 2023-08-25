@@ -1,9 +1,6 @@
 export interface Profile {
-  email: string;
-  fullBio: string;
   headline: string;
   leftImage: SanityImage;
-  location: string;
   primaryImage: SanityImage;
   resumeUrl: string;
   rightImage: SanityImage;

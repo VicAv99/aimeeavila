@@ -69,22 +69,6 @@ export default defineType({
       rows: 4,
     }),
     defineField({
-      name: "email",
-      title: "Email Address",
-      type: "string",
-    }),
-    defineField({
-      name: "location",
-      title: "Location",
-      type: "string",
-    }),
-    defineField({
-      name: "fullBio",
-      title: "Full Bio",
-      type: "array",
-      of: [{ type: "block" }],
-    }),
-    defineField({
       name: "resumeUrl",
       title: "Upload Resume",
       type: "file",
