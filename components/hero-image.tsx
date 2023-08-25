@@ -1,6 +1,7 @@
-import Image from "next/image";
 import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { cn } from "~/lib/cn";
+
+import { ImageWithFallback } from "./image-with-fallback";
 
 const IMAGES = [
   {
@@ -32,7 +33,7 @@ export function HeroImage({ className }: HeroImageProps) {
         {IMAGES.map((image) => (
           <div key={image.src} className={cn(image.class)}>
             <AspectRatio ratio={image.ratio}>
-              <Image
+              <ImageWithFallback
                 fill
                 priority
                 src={image.src}

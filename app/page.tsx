@@ -1,5 +1,6 @@
 import { AboutMeSection } from "~/components/about-me-section";
 import { MainSection } from "~/components/main-section";
+import { ProjectsSection } from "~/components/projects-section";
 import { SkillsSection } from "~/components/skills-section";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <AboutMeSection />
         <SkillsSection />
       </div>
+      <ProjectsSection />
     </main>
   );
 }
