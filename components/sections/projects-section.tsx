@@ -6,7 +6,7 @@ const PROJECTS: { image?: string; title: string }[] = [];
 
 export function ProjectsSection() {
   return (
-    <section className="space-y-6 mx-auto text-center">
+    <section id="projects" className="space-y-6 mx-auto text-center">
       <h2 className="uppercase lg:leading-tight">Projects</h2>
       <p className="text-zinc-400">
         Check back soon to learn about project I&apos;ve been a part of!

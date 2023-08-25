@@ -1,6 +1,6 @@
 export function AboutMeSection() {
   return (
-    <section className="space-y-6 mx-auto text-center">
+    <section id="about" className="space-y-6 mx-auto text-center">
       <h2 className="uppercase lg:leading-tight">About me</h2>
       <div className="leading-relaxed text-zinc-400">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,

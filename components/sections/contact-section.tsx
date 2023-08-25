@@ -45,7 +45,7 @@ export function ContactSection() {
   if (!mounted) return null;
 
   return (
-    <section className="space-y-6 mx-auto text-center">
+    <section id="contact" className="space-y-6 mx-auto text-center">
       <h2 className="uppercase lg:leading-tight">Contact me</h2>
       <Card className="bg-muted">
         <Form {...form}>
