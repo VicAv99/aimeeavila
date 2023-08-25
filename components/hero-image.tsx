@@ -1,7 +1,7 @@
 import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { cn } from "~/lib/cn";
 
-import { ImageWithFallback } from "./image-with-fallback";
+import { ImageWithFallback } from "./ui/image-with-fallback";
 
 const IMAGES = [
   {

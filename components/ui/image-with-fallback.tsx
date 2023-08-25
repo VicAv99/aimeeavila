@@ -3,7 +3,7 @@
 import Image, { ImageProps } from "next/image";
 import { useEffect, useState } from "react";
 
-import fallbackImage from "../public/images/square.jpeg";
+import fallbackImage from "../../public/images/square.jpeg";
 
 interface ImageWithFallbackProps extends ImageProps {
   fallback?: ImageProps["src"];

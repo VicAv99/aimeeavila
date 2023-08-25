@@ -1,5 +1,5 @@
-import { HeroImage } from "./hero-image";
-import { Button } from "./ui/button";
+import { HeroImage } from "../hero-image";
+import { Button } from "../ui/button";
 
 export function MainSection() {
   return (

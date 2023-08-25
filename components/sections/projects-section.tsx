@@ -1,6 +1,6 @@
-import { ImageWithFallback } from "./image-with-fallback";
-import { AspectRatio } from "./ui/aspect-ratio";
-import { Button } from "./ui/button";
+import { AspectRatio } from "../ui/aspect-ratio";
+import { Button } from "../ui/button";
+import { ImageWithFallback } from "../ui/image-with-fallback";
 
 const PROJECTS: { image?: string; title: string }[] = [];
 
