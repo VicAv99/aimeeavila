@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 
 import { Inter } from "next/font/google";
 import { PropsWithChildren } from "react";
@@ -7,6 +7,7 @@ import { Navbar } from "~/components/navbar";
 import { ThemeProvider } from "~/components/theme-provider";
 
 import type { Metadata } from "next";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: PropsWithChildren<unknown>) {
